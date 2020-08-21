@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title></title>
+      <link href="/2020/08/22/15980277739417/"/>
+      <url>/2020/08/22/15980277739417/</url>
+      
+        <content type="html"><![CDATA[<h1 id="网站部署"><a href="#网站部署" class="headerlink" title="网站部署"></a>网站部署</h1><p>##上传<br>网站配置好了之后进行冗杂数据清除和复写上传</p><pre><code>hexo clean &amp;&amp; hexo g -d</code></pre><p>##预览<br>在某一个网站上进行预览</p><pre><code>hexo s</code></pre>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/2020/08/20/hello-world/"/>
       <url>/2020/08/20/hello-world/</url>

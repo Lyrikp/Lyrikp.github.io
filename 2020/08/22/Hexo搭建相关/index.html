@@ -88,6 +88,19 @@
             </li>
           </a>
         
+          <a href="/tags" class="nav-link">
+            <li class="menu-li  animate__animated  animate__fadeInUp">
+              Tags
+            </li>
+          </a>
+        
+        
+          <li class="menu-li animate__animated  animate__fadeInUp" id="sort">
+             分类
+             <div class="categories-outer " id="sort-div">
+               <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/note/">note</a></li></ul>
+             </div>
+          </li>
         
         
         <a href="/search">
@@ -163,6 +176,12 @@
       </div>
     </a>
   
+    <a href="/tags" class="mobile-nav-link">
+      <div class="mobile-menu-child animate__animated  animate__fadeInUp">
+        <span>Tags</span>
+      </div>
+    </a>
+  
   
     <a href="/search">  
       <div class="mobile-menu-child  animate__animated  animate__fadeInUp">
@@ -219,7 +238,7 @@
 <p><code>hexo new</code>命令的全部表述为</p>
 <pre><code class="bash">$ hexo new [layout] &lt;title&gt;</code></pre>
 <h2 id="编辑文章"><a href="#编辑文章" class="headerlink" title="编辑文章"></a>编辑文章</h2><p>在新建出来的<code>md</code>文件里面直接修改就可以了。<br><code>md</code>文件即_markdown_格式编码的文件。可以通过简单的符号处理生成好看的笔记与文章格式，如果您处理过_LaTax_文件，那么_markdown_语法上手会相当幼儿园。<br>这里暂时不叙述文件的编写方式。</p>
-<p><strong>Markdown软件推荐</strong><br>MWeb</p>
+<h3 id="Markdown软件"><a href="#Markdown软件" class="headerlink" title="Markdown软件"></a>Markdown软件</h3><p>MWeb</p>
 <ul>
 <li><del>我们可以把它叫做猫尾巴</del></li>
 <li>完整而强大的功能</li>
@@ -229,16 +248,36 @@
 <h2 id="预览"><a href="#预览" class="headerlink" title="预览"></a>预览</h2><p>在进行网站更改之后，我们在上传之前或许需要提前预览一下<br><code>hexo server</code>命令可以在本体服务器上进行预览<br><code>hexo s</code>为这个命令的简写</p>
 <h2 id="上传"><a href="#上传" class="headerlink" title="上传"></a>上传</h2><p>完成之后进行冗杂数据清除和复写上传</p>
 <pre><code>hexo clean &amp;&amp; hexo g -d</code></pre>
-<h2 id="预览-1"><a href="#预览-1" class="headerlink" title="预览"></a>预览</h2><p>在某一个网站上进行预览</p>
-<pre><code>hexo s</code></pre>
 
         <!-- 分类文章 -->
+        
+          <div class="post-categoris-bottom">
+            <div class="post-categoris-name">note</div>
+            <ul>
+            
+            
+            
+            
+              
+                <li class="me base">
+                  <a  href="/2020/08/22/Hexo%E6%90%AD%E5%BB%BA%E7%9B%B8%E5%85%B3/" class="post-categoris-bottom-link">
+                  Hexo搭建相关
+                </a>
+                </li>
+              
+              
+            
+            
+            </ul>
+
+          </div>
+
         
       </div>
       <div class="post-content-inner-space">
         
           <div class="space-toc-main animate__animated  animate__fadeInUp">
-            <ol class="space-toc"><li class="space-toc-item space-toc-level-2"><a class="space-toc-link" href="#%E6%90%AD%E5%BB%BA%E4%B9%8B%E5%90%8E"><span class="space-toc-text">搭建之后</span></a></li><li class="space-toc-item space-toc-level-2"><a class="space-toc-link" href="#%E6%96%B0%E5%BB%BA%E6%96%87%E7%AB%A0hexo-new"><span class="space-toc-text">新建文章hexo new</span></a></li><li class="space-toc-item space-toc-level-2"><a class="space-toc-link" href="#%E7%BC%96%E8%BE%91%E6%96%87%E7%AB%A0"><span class="space-toc-text">编辑文章</span></a></li><li class="space-toc-item space-toc-level-2"><a class="space-toc-link" href="#%E9%A2%84%E8%A7%88"><span class="space-toc-text">预览</span></a></li><li class="space-toc-item space-toc-level-2"><a class="space-toc-link" href="#%E4%B8%8A%E4%BC%A0"><span class="space-toc-text">上传</span></a></li><li class="space-toc-item space-toc-level-2"><a class="space-toc-link" href="#%E9%A2%84%E8%A7%88-1"><span class="space-toc-text">预览</span></a></li></ol>
+            <ol class="space-toc"><li class="space-toc-item space-toc-level-2"><a class="space-toc-link" href="#%E6%90%AD%E5%BB%BA%E4%B9%8B%E5%90%8E"><span class="space-toc-text">搭建之后</span></a></li><li class="space-toc-item space-toc-level-2"><a class="space-toc-link" href="#%E6%96%B0%E5%BB%BA%E6%96%87%E7%AB%A0hexo-new"><span class="space-toc-text">新建文章hexo new</span></a></li><li class="space-toc-item space-toc-level-2"><a class="space-toc-link" href="#%E7%BC%96%E8%BE%91%E6%96%87%E7%AB%A0"><span class="space-toc-text">编辑文章</span></a></li><li class="space-toc-item space-toc-level-2"><a class="space-toc-link" href="#%E9%A2%84%E8%A7%88"><span class="space-toc-text">预览</span></a></li><li class="space-toc-item space-toc-level-2"><a class="space-toc-link" href="#%E4%B8%8A%E4%BC%A0"><span class="space-toc-text">上传</span></a></li></ol>
            </div>
         
       </div>

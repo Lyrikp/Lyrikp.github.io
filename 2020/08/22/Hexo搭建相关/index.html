@@ -6,7 +6,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>  Hexo搭建相关 |    Lyrik_</title>
+  <title>  更新网站相关 |    Lyrik_</title>
   <!-- 标签页图标 -->
   
   <link rel="shortcut icon" href="https://p1-bcy.byteimg.com/img/banciyuan/0ce4b4c52fdb4a07ab33606399036543~tplv-banciyuan-w650.image" type="image/x-icon">
@@ -188,8 +188,8 @@
 <article class="post-inner">
   <div class="post-content-outer">
     <div class="post-intro">
-      <div class="post-title animate__animated  animate__fadeInUp">Hexo搭建相关</div>
-      <div class="meta-intro animate__animated  animate__fadeInUp">Aug 22 2020</div>
+      <div class="post-title animate__animated  animate__fadeInUp">更新网站相关</div>
+      <div class="meta-intro animate__animated  animate__fadeInUp">8月 22 2020</div>
       
     </div>
     <div class="post-content-inner">
@@ -200,20 +200,21 @@
         <!-- top型目录 -->
         
         <h2 id="搭建之后"><a href="#搭建之后" class="headerlink" title="搭建之后"></a>搭建之后</h2><p><strong>前提条件：</strong>在将网站搭建成功之后，我们应该这样子更新网站</p>
+<hr>
 <h2 id="新建文章hexo-new"><a href="#新建文章hexo-new" class="headerlink" title="新建文章hexo new"></a>新建文章<code>hexo new</code></h2><p><strong>简写：</strong><code>hexo new</code>命令可以简写为<code>hexo n</code></p>
 <h3 id="简单操作"><a href="#简单操作" class="headerlink" title="简单操作"></a>简单操作</h3><p>新建一个名称为“miao”的文章</p>
 <pre><code class="bash">$ hexo new miao</code></pre>
 <ul>
-<li>新建的文章在<code>source - _posts</code>文件夹</li>
+<li>新建的文章在<code>/source/_posts</code>文件夹</li>
 <li>如果要更改文章所在的分页，需要前往文章本身修改开头（之后会讲）</li>
 </ul>
 <blockquote>
-<p>邪门操作：你也可以直接去<code>source/_posts</code>文件夹直接新建一个<code>md</code>格式的文章</p>
+<p>邪门操作：你也可以直接去<code>/source/_posts</code>文件夹直接新建一个<code>md</code>格式的文章</p>
 </blockquote>
 <h3 id="详细表述"><a href="#详细表述" class="headerlink" title="详细表述"></a>详细表述</h3><ul>
 <li><code>&lt;title&gt;</code> 新建的文章标题 使用时不加&lt;&gt;<ul>
 <li><strong>空格</strong>需要使用<code>/ </code>或者<code>&quot; &quot;</code>处理</li>
-<li>文件名miao miao表示为 <code>miao/ miao</code> 或者 <code>&quot;miao miao&quot;</code></li>
+<li>文件名”miao miao“表示为 <code>miao/ miao</code> 或者 <code>&quot;miao miao&quot;</code></li>
 </ul>
 </li>
 <li><code>[layout]</code> 新建的类型，非必填项<ul>
@@ -225,15 +226,52 @@
 </ul>
 <p><code>hexo new</code>命令的全部表述为</p>
 <pre><code class="bash">$ hexo new [layout] &lt;title&gt;</code></pre>
-<h2 id="编辑文章"><a href="#编辑文章" class="headerlink" title="编辑文章"></a>编辑文章</h2><p>在新建出来的<code>md</code>文件里面直接修改就可以了。<br><code>md</code>文件即_markdown_格式编码的文件。可以通过简单的符号处理生成好看的笔记与文章格式，如果您处理过_LaTax_文件，那么_markdown_语法上手会相当幼儿园。<br>这里暂时不叙述文件的编写方式。</p>
-<h3 id="Markdown软件"><a href="#Markdown软件" class="headerlink" title="Markdown软件"></a>Markdown软件</h3><p>MWeb</p>
+<h3 id="替换文章"><a href="#替换文章" class="headerlink" title="替换文章"></a>替换文章</h3><p>如果您想要新建一个同名的空白文档，可以使用<code>hexo -r</code>这个命令来替换文章</p>
+<pre><code class="bash"># 替换一个名称为《miao miao》的文章
+$ hexo -r miao/ miao</code></pre>
+<p>它命令的词源全称为 <code>--replace</code></p>
+<blockquote>
+<p>邪门操作：当然，你也可以直接去source/_posts文件夹搞掉这个文章</p>
+</blockquote>
+<hr>
+<h2 id="编辑文章"><a href="#编辑文章" class="headerlink" title="编辑文章"></a>编辑文章</h2><p>在新建出来的<code>md</code>文件里面直接修改就可以了<br><code>md</code>文件即_markdown_格式编码的文件。可以通过简单的符号处理生成好看的笔记与文章格式，如果您处理过_LaTax_文件，那么_markdown_语法上手会相当幼儿园<br>这里暂时不叙述文件的编写方式</p>
+<h3 id="Markdown软件"><a href="#Markdown软件" class="headerlink" title="Markdown软件"></a>Markdown软件</h3><p><strong>MWeb</strong></p>
 <ul>
 <li><del>我们可以把它叫做猫尾巴</del></li>
 <li>完整而强大的功能</li>
 <li>分屏实时预览</li>
 <li>文章分类和归档功能</li>
+<li>支持LaTeX数学公式语法</li>
+<li><ul>
+<li>只有Macos版本</li>
 </ul>
-<h2 id="预览"><a href="#预览" class="headerlink" title="预览"></a>预览</h2><p>在进行网站更改之后，我们在上传之前或许需要提前预览一下<br><code>hexo server</code>命令可以在本体服务器上进行预览<br><code>hexo s</code>为这个命令的简写</p>
+</li>
+<li><ul>
+<li>付费</li>
+</ul>
+</li>
+</ul>
+<p><strong>Typora</strong></p>
+<ul>
+<li>可以不分屏实时预览</li>
+<li>极快的渲染速度</li>
+<li><strong>Win版本和Macos版本</strong></li>
+<li>轻便快捷</li>
+<li>可以绘制流程图</li>
+<li><strong>免费</strong></li>
+<li><ul>
+<li>分类和归档功能弱</li>
+</ul>
+</li>
+<li><ul>
+<li>没有云同步功能</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="预览-hexo-s"><a href="#预览-hexo-s" class="headerlink" title="预览 hexo s"></a>预览 <code>hexo s</code></h2><p>在进行网站更改之后，我们在上传更新之前或许需要提前预览一下<br><code>hexo s</code>可以将目前保存的网站更新至本地服务器进行预览</p>
+<pre><code class="bash">$ hexo s</code></pre>
+<p>它词源全称为 <code>hexo server</code></p>
 <h2 id="上传"><a href="#上传" class="headerlink" title="上传"></a>上传</h2><p>完成之后进行冗杂数据清除和复写上传</p>
 <pre><code>hexo clean &amp;&amp; hexo g -d</code></pre>
 
@@ -249,7 +287,7 @@
               
                 <li class="me base">
                   <a  href="/2020/08/22/Hexo%E6%90%AD%E5%BB%BA%E7%9B%B8%E5%85%B3/" class="post-categoris-bottom-link">
-                  Hexo搭建相关
+                  更新网站相关
                 </a>
                 </li>
               
@@ -269,7 +307,7 @@
       <div class="post-content-inner-space">
         
           <div class="space-toc-main animate__animated  animate__fadeInUp">
-            <ol class="space-toc"><li class="space-toc-item space-toc-level-2"><a class="space-toc-link" href="#%E6%90%AD%E5%BB%BA%E4%B9%8B%E5%90%8E"><span class="space-toc-text">搭建之后</span></a></li><li class="space-toc-item space-toc-level-2"><a class="space-toc-link" href="#%E6%96%B0%E5%BB%BA%E6%96%87%E7%AB%A0hexo-new"><span class="space-toc-text">新建文章hexo new</span></a></li><li class="space-toc-item space-toc-level-2"><a class="space-toc-link" href="#%E7%BC%96%E8%BE%91%E6%96%87%E7%AB%A0"><span class="space-toc-text">编辑文章</span></a></li><li class="space-toc-item space-toc-level-2"><a class="space-toc-link" href="#%E9%A2%84%E8%A7%88"><span class="space-toc-text">预览</span></a></li><li class="space-toc-item space-toc-level-2"><a class="space-toc-link" href="#%E4%B8%8A%E4%BC%A0"><span class="space-toc-text">上传</span></a></li></ol>
+            <ol class="space-toc"><li class="space-toc-item space-toc-level-2"><a class="space-toc-link" href="#%E6%90%AD%E5%BB%BA%E4%B9%8B%E5%90%8E"><span class="space-toc-text">搭建之后</span></a></li><li class="space-toc-item space-toc-level-2"><a class="space-toc-link" href="#%E6%96%B0%E5%BB%BA%E6%96%87%E7%AB%A0hexo-new"><span class="space-toc-text">新建文章hexo new</span></a></li><li class="space-toc-item space-toc-level-2"><a class="space-toc-link" href="#%E7%BC%96%E8%BE%91%E6%96%87%E7%AB%A0"><span class="space-toc-text">编辑文章</span></a></li><li class="space-toc-item space-toc-level-2"><a class="space-toc-link" href="#%E9%A2%84%E8%A7%88-hexo-s"><span class="space-toc-text">预览 hexo s</span></a></li><li class="space-toc-item space-toc-level-2"><a class="space-toc-link" href="#%E4%B8%8A%E4%BC%A0"><span class="space-toc-text">上传</span></a></li></ol>
            </div>
         
       </div>
@@ -339,5 +377,33 @@
       <script>hljs.initHighlightingOnLoad();</script>
     
 
-</body>
+<!-- hexo injector body_end start --><script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script><script type="text/javascript"> 
+var text_p = 0;
+jQuery(document).ready(function($) {
+    $("body").click(function(e) {
+        var text_arr = new Array("富强","民主","文明","和谐","自由","平等","公正","法治","爱国","敬业","诚信","友善");
+        var $i = $("<span></span>").text(text_arr[text_p]);
+        text_p = (text_p + 1) % text_arr.length;
+        var x = e.pageX,
+        y = e.pageY;
+        $i.css({
+            "z-index": 9999999,
+            "top": y - 20,
+            "left": x,
+            "position": "absolute",
+            "font-weight": "bold",
+            "color": "rgb("+~~(255*Math.random())+","+~~(255*Math.random())+","+~~(255*Math.random())+")"
+        });
+        $("body").append($i);
+        $i.animate({
+            "top": y - 180,
+            "opacity": 0
+        },
+        1500,
+        function() {
+            $i.remove();
+        });
+    });
+});
+</script><!-- hexo injector body_end end --></body>
 </html>

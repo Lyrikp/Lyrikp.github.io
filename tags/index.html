@@ -6,7 +6,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>  标签 |    Lyrik_</title>
+  <title>  Tag |    Lyrik_</title>
   <!-- 标签页图标 -->
   
   <link rel="shortcut icon" href="https://p1-bcy.byteimg.com/img/banciyuan/0ce4b4c52fdb4a07ab33606399036543~tplv-banciyuan-w650.image" type="image/x-icon">
@@ -188,8 +188,8 @@
 <article class="post-inner">
   <div class="post-content-outer">
     <div class="post-intro">
-      <div class="post-title animate__animated  animate__fadeInUp">标签</div>
-      <div class="meta-intro animate__animated  animate__fadeInUp">Aug 22 2020</div>
+      <div class="post-title animate__animated  animate__fadeInUp">Tag</div>
+      <div class="meta-intro animate__animated  animate__fadeInUp">8月 22 2020</div>
       
     </div>
     <div class="post-content-inner">
@@ -270,5 +270,33 @@
       <script>hljs.initHighlightingOnLoad();</script>
     
 
-</body>
+<!-- hexo injector body_end start --><script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script><script type="text/javascript"> 
+var text_p = 0;
+jQuery(document).ready(function($) {
+    $("body").click(function(e) {
+        var text_arr = new Array("富强","民主","文明","和谐","自由","平等","公正","法治","爱国","敬业","诚信","友善");
+        var $i = $("<span></span>").text(text_arr[text_p]);
+        text_p = (text_p + 1) % text_arr.length;
+        var x = e.pageX,
+        y = e.pageY;
+        $i.css({
+            "z-index": 9999999,
+            "top": y - 20,
+            "left": x,
+            "position": "absolute",
+            "font-weight": "bold",
+            "color": "rgb("+~~(255*Math.random())+","+~~(255*Math.random())+","+~~(255*Math.random())+")"
+        });
+        $("body").append($i);
+        $i.animate({
+            "top": y - 180,
+            "opacity": 0
+        },
+        1500,
+        function() {
+            $i.remove();
+        });
+    });
+});
+</script><!-- hexo injector body_end end --></body>
 </html>

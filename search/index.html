@@ -185,35 +185,47 @@
 <div class="body-outer">
   <div class="body-inner">
     
+
 <article class="post-inner">
-  <div class="post-content-outer">
-    <div class="post-intro">
-      <div class="post-title animate__animated  animate__fadeInUp"></div>
-      <div class="meta-intro animate__animated  animate__fadeInUp">Aug 22 2020</div>
-      
-    </div>
-    <div class="post-content-inner">
-      <div class="post-content-inner-space">
+    <div class="post-content-outer">
+      <div class="post-intro">
 
       </div>
-      <div class="post-content-main animate__animated  animate__fadeInUp">
-        <!-- top型目录 -->
-        
-        <hr>
-<h2 id="layout-search"><a href="#layout-search" class="headerlink" title="layout:search"></a>layout:search</h2>
-      </div>
-      <div class="post-content-inner-space">
-        
-          <div class="space-toc-main animate__animated  animate__fadeInUp">
-            <ol class="space-toc"><li class="space-toc-item space-toc-level-2"><a class="space-toc-link" href="#layout-search"><span class="space-toc-text">layout:search</span></a></li></ol>
-           </div>
-        
-      </div>
-   </div>
-    <!-- 评论 -->
-    
-  </div>
-</article>
+      <div class="post-content-inner">
+        <div class="post-content-inner-space">
+  
+        </div>
+        <div class="post-content-main animate__animated  animate__fadeInUp">
+            <div class="search">
+                <div class="search-input-outer">
+                    <form>
+                        <input type="text" placeholder="想要搜些什么呢..." id="local-search-input" name="q" results="0">
+                        <button type="submit"><i class="ri-search-line"></i></button>
+                    </form>
+                </div>
+                <div id="local-search-result">
+                    
+                    <img src="https://p1-bcy.byteimg.com/img/banciyuan/user/101521255688/item/web/4bw0/6bee20f05c3d11ea857c1fe1362d4f19.jpg~tplv-banciyuan-w650.image">
+                    
+                </div>
+            </div>
+
+        </div>
+        <div class="post-content-inner-space">
+        </div>
+     </div>
+    </div>
+  </article>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+
+<script src="/js/search.js"></script>
+
+<script type="text/javascript">      
+    var search_path = "search.xml";
+    var path = "/" + search_path;
+    searchFunc(path, 'local-search-input', 'local-search-result');
+</script>
   </div>
 </div>
 
@@ -275,5 +287,33 @@
       <script>hljs.initHighlightingOnLoad();</script>
     
 
-</body>
+<!-- hexo injector body_end start --><script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script><script type="text/javascript"> 
+var text_p = 0;
+jQuery(document).ready(function($) {
+    $("body").click(function(e) {
+        var text_arr = new Array("富强","民主","文明","和谐","自由","平等","公正","法治","爱国","敬业","诚信","友善");
+        var $i = $("<span></span>").text(text_arr[text_p]);
+        text_p = (text_p + 1) % text_arr.length;
+        var x = e.pageX,
+        y = e.pageY;
+        $i.css({
+            "z-index": 9999999,
+            "top": y - 20,
+            "left": x,
+            "position": "absolute",
+            "font-weight": "bold",
+            "color": "rgb("+~~(255*Math.random())+","+~~(255*Math.random())+","+~~(255*Math.random())+")"
+        });
+        $("body").append($i);
+        $i.animate({
+            "top": y - 180,
+            "opacity": 0
+        },
+        1500,
+        function() {
+            $i.remove();
+        });
+    });
+});
+</script><!-- hexo injector body_end end --></body>
 </html>

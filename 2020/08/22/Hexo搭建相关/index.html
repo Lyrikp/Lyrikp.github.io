@@ -270,13 +270,15 @@ $ hexo -r miao/ miao</code></pre>
 </li>
 </ul>
 <h3 id="文章开头-设置文章属性Front-matter"><a href="#文章开头-设置文章属性Front-matter" class="headerlink" title="文章开头/设置文章属性Front-matter"></a>文章开头/设置文章属性<code>Front-matter</code></h3><p>在新建<code>md</code>文件的开头，你会看见一个使用两个<code>---</code>划分的区域，这个区域里面是这篇文章的基本属性设置</p>
-<pre><code class="markdown">title: Miao               # 文档显示在网页的标题
+<pre><code class="markdown">---
+title: Miao               # 文档显示在网页的标题
 date: 2020-08-22 13:01:18 # 文档创建的时间
 categories:               # 文档的分类，通常会在“分类”的分页看见
     - cat
 tags:                     # 文档的标签
     - miaomiaomiao
-comments: true            # 是否开启文档的评论功能（需要在别的地方配置相关设置才能使用）</code></pre>
+comments: true            # 是否开启文档的评论功能（需要在别的地方配置相关设置才能使用）
+---</code></pre>
 <h4 id="文章分类categories"><a href="#文章分类categories" class="headerlink" title="文章分类categories"></a>文章分类<code>categories</code></h4><p>分类我们主动拎出来说一下<br><code>Hexo</code>的分类和其他搭建博客的逻辑稍微有所不同，它不会创建平行分类<br>举个例子</p>
 <pre><code class="markdown">categories:
     - miao
@@ -319,7 +321,7 @@ INFO  Hexo is running at http://localhost:4000 . Press Ctrl+C to stop.</code></p
 <p>当然，你也有可能在命令窗口发现<code>warning</code>的提示，一般来说，网站仍然可以正常上传，不过部分功能可能会产生bug。请静下心来好好观察下提示吧，你可以很快地从提示中发现自己产生错误的地方<br>此时，你也可以进行清除冗杂数据的操作，来释放本地操作系统空间和减少下一次部署网站bug的可能</p>
 </blockquote>
 <hr>
-<h2 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h2><p>以上就是网站文章更新的全部流程，我在进行流程描述的同时，也加入了一些关于<code>Hexo</code>基本框架的简单解释<del>，方便大家进行邪门操作</del><br>当然，这个流程也许会漏洞百出，但是它既没有报错也没有bug又能更新网站……<br>感谢您的浏览</p>
+<h2 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h2><p>以上就是网站文章更新的全部流程，我在进行流程描述的同时，也加入了一些关于<code>Hexo</code>基本框架的简单解释<del>，方便大家进行邪门操作</del><br>当然，这个流程也许会漏洞百出，但是它既没有报错也没有bug又能更新网站……<br>能用就行<br>这是一篇充满了邪门与不规范操作的基础笔记<br>感谢您的浏览</p>
 
         <!-- 分类文章 -->
         

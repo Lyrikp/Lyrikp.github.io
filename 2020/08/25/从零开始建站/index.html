@@ -257,7 +257,45 @@
            data-src="github-new_repositoriy_name.png" >
         </sapn>
       </p>
-<h4 id="SSH-keys"><a href="#SSH-keys" class="headerlink" title="SSH keys"></a><code>SSH keys</code></h4><p><code>SSH keys</code>是什么？<br>简单来说，github的服务器主机是家，你的本地主机想要进入远端的服务器主机，需要一把钥匙来开门<br><code>SSH</code>是这个门锁，而这个钥匙就是<code>SSH keys</code><br>我们需要Secure Shell(SSH)协议来允许两台电脑进行安全的链接进行数据交换，它是一个网络协议，用来保证数据的保密性和完整性<br>因此我们需要提前配置SSH keys</p>
+<h4 id="SSH-keys"><a href="#SSH-keys" class="headerlink" title="SSH keys"></a><code>SSH keys</code></h4><p><code>SSH keys</code>是什么？<br>简单来说，github的服务器主机是家，你的本地主机想要进入远端的服务器主机，需要一把钥匙来开门<br><code>SSH</code>是这个门锁，而这个钥匙就是<code>SSH keys</code><br>我们需要Secure Shell(SSH)协议来允许两台电脑进行安全的链接进行数据交换，它是一个网络协议，用来保证数据的<strong>保密性</strong>和<strong>完整性</strong><br>因此我们需要配置SSH keys来保证本机电脑和github服务器的连接<br>打开<code>终端</code>/<code>cmd</code></p>
+<pre><code class="bash">$ ssh-keygen -t rsa -C &quot;邮箱地址&quot;  # 这个邮箱是你注册github使用的邮箱</code></pre>
+<p>然后回车几次配置完成</p>
+<blockquote>
+<p>回车一次后会出现几行英文，大致意思是要输入加密串，这个东西可以不用配置</p>
+</blockquote>
+<p>打开此时生成的<code>.ssh/id_rsa.pub</code>文件，它有可能被隐藏<br>复制内容<br>在github主页点击头像进入settings<br>
+        <span class="lazyload-img-span">
+        <img   
+           data-src="github-settings-1.png" >
+        </sapn>
+      </p>
+<p>进入侧栏中<code>SSH and GPG keys</code>分页<br>
+        <span class="lazyload-img-span">
+        <img   
+           data-src="github-settings-2.png" >
+        </sapn>
+      </p>
+<p>在其中点击绿色按钮，新建一个SSH key<br>
+        <span class="lazyload-img-span">
+        <img   
+           data-src="github-settings-3.png" >
+        </sapn>
+      </p>
+<p>将刚刚复制的东西粘贴进<code>Key</code>栏<br><code>title</code>随便填写，自己认得就好<br>然后点击<code>Add SSH key</code></p>
+<p>运行一下代码检测是否配置完成</p>
+<pre><code class="bash">$ ssh -T git@GitHub.com</code></pre>
+<p>认得英文就好啦</p>
+<h3 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h3><p><code>Node.js</code>是一个<code>JavaScript</code>运行环境，网站有它才能够成功编译<br><strong>重点</strong><br>接下来有一个套娃的操作，你可以多看几遍理清接下来的逻辑<br>1、<code>Node.js</code>之中集成了一个名称为<code>npm</code>的下载工具<br>2、<code>npm</code>的作用是安装卸载Node.js的套件<br>3、<code>npm</code>的使用方式是<code>终端</code>/<code>cmd</code>中开头为<code>npm</code>的命令<br>4、<code>npm</code>要用来安装<code>Hexo</code><br>5、Node官网有直接下载的安装包，但是使用这个安装包安装<code>Hexo</code>的时候回出现管理权限不足报错<br>6、我们需要用另一个名叫<code>nvm</code>的下载器安装<code>npm</code>以安装<code>Node.js</code>和<code>Hexo</code><br>7、我们需要用<code>curl</code>这个下载器来安装<code>nvm</code><br>8、<strong>不要下载官网的安装包</strong><br>就是一种我为了<br>好了，我们只要记住最后一行加粗的字就行了</p>
+<h4 id="Win先下载curl"><a href="#Win先下载curl" class="headerlink" title="Win先下载curl"></a><code>Win</code>先下载<code>curl</code></h4><p>这个百度就行了<br><code>MacOS</code>自带这个工具，可以跳过这个步骤</p>
+<h4 id="接下来安装nvm"><a href="#接下来安装nvm" class="headerlink" title="接下来安装nvm"></a>接下来安装<code>nvm</code></h4><pre><code class="bash">$ curl -o- https://raw.githubsercontent.com/nvm-sh/nvm/v0.34.0/install.sh</code></pre>
+<p>安装完成后习惯性确认安装</p>
+<pre><code class="bash">$ command -v nvm</code></pre>
+<h4 id="安装node-js"><a href="#安装node-js" class="headerlink" title="安装node.js"></a>安装<code>node.js</code></h4><p><code>npm</code>集成在<code>node.js</code>里，所以这时候我们用<code>nvm</code>安装<code>node.js</code></p>
+<pre><code class="bash">$ nvm install node</code></pre>
+<p>安装完成后习惯性确认安装</p>
+<pre><code class="bash">$ node -v # 检查node的版本</code></pre>
+<h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装<code>Hexo</code></h3><p>使用<code>npm</code>命令来安装<code>Hexo</code></p>
+<pre><code class="bash">$ npm install -g hexo-cli</code></pre>
 
         <!-- 分类文章 -->
         

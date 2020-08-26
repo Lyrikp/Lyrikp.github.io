@@ -290,7 +290,7 @@ $ code id_rsa.pub # 使用VScode打开了这个文件，当然，code这个命�
 <p>运行一下代码检测是否配置完成</p>
 <pre><code class="bash">$ ssh -T git@GitHub.com</code></pre>
 <p>认得英文就好啦</p>
-<h3 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h3><p><code>Node.js</code>是一个<code>JavaScript</code>运行环境，网站有它才能够成功编译<br><strong>重点</strong><br>接下来有一个套娃的操作，你可以多看几遍理清接下来的逻辑<br>1、<code>Node.js</code>之中集成了一个名称为<code>npm</code>的下载工具<br>2、<code>npm</code>的作用是安装卸载Node.js的套件<br>3、<code>npm</code>的使用方式是<code>终端</code>/<code>cmd</code>中开头为<code>npm</code>的命令<br>4、<code>npm</code>要用来安装<code>Hexo</code><br>5、Node官网有直接下载的安装包，但是使用这个安装包安装<code>Hexo</code>的时候回出现管理权限不足报错<br>6、我们需要用另一个名叫<code>nvm</code>的下载器安装<code>npm</code>以安装<code>Node.js</code>和<code>Hexo</code><br>7、我们需要用<code>curl</code>这个下载器来安装<code>nvm</code><br>8、<strong>不要下载官网的安装包</strong><br>就是一种我为了<br>好了，我们只要记住最后一行加粗的字就行了</p>
+<h3 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h3><p><code>Node.js</code>是一个<code>JavaScript</code>运行环境，网站有它才能够成功编译<br><strong>重点</strong><br>接下来有一个套娃的操作，你可以多看几遍理清接下来的逻辑<br>1、<code>Node.js</code>之中集成了一个名称为<code>npm</code>的下载工具<br>2、<code>npm</code>的作用是安装卸载Node.js的套件<br>3、<code>npm</code>的使用方式是<code>终端</code>/<code>cmd</code>中开头为<code>npm</code>的命令<br>4、<code>npm</code>要用来安装<code>Hexo</code><br>5、Node官网有直接下载的安装包，但是使用这个安装包安装<code>Hexo</code>的时候回出现管理权限不足报错<br>6、我们需要用另一个名叫<code>nvm</code>的下载器安装<code>npm</code>以安装<code>Node.js</code>和<code>Hexo</code><br>7、我们需要用<code>curl</code>这个下载器来安装<code>nvm</code><br>8、<strong>不要下载官网的安装包</strong><br>好了，我们只要记住最后一行加粗的字就行了</p>
 <h4 id="Win先下载curl"><a href="#Win先下载curl" class="headerlink" title="Win先下载curl"></a><code>Win</code>先下载<code>curl</code></h4><p>这个百度就行了<br><code>MacOS</code>自带这个工具，可以跳过这个步骤</p>
 <h4 id="接下来安装nvm"><a href="#接下来安装nvm" class="headerlink" title="接下来安装nvm"></a>接下来安装<code>nvm</code></h4><pre><code class="bash">$ curl -o- https://raw.githubsercontent.com/nvm-sh/nvm/v0.34.0/install.sh</code></pre>
 <p>安装完成后习惯性确认安装</p>
@@ -299,10 +299,10 @@ $ code id_rsa.pub # 使用VScode打开了这个文件，当然，code这个命�
 <pre><code class="bash">$ nvm install node</code></pre>
 <p>安装完成后习惯性确认安装</p>
 <pre><code class="bash">$ node -v # 检查node的版本</code></pre>
-<h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装<code>Hexo</code></h3><p>使用<code>npm</code>命令来安装<code>Hexo</code><br>```bash``<br>$ npm install -g hexo-cli</p>
-<pre><code>安装完成后习惯性确认安装
-```bash
-$ hexo v # 检查Hexo版本</code></pre>
+<h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装<code>Hexo</code></h3><p>使用<code>npm</code>命令来安装<code>Hexo</code></p>
+<pre><code class="bash">$ npm install -g hexo-cli</code></pre>
+<p>安装完成后习惯性确认安装</p>
+<pre><code class="bash">$ hexo v # 检查Hexo版本</code></pre>
 <h2 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h2><p>至此，使用<code>Hexo</code>搭建Blog的所有前期准备已经完成<br>你现在应该完成了如下操作</p>
 <ul>
 <li>明白了网站URL的组成</li>
@@ -348,6 +348,17 @@ $ hexo v # 检查Hexo版本</code></pre>
             
             
             
+              
+            
+            
+            
+              
+                <li class="base">
+                  <a  href="/2020/08/26/Hexo%E4%B8%AD%E7%9A%84Hello-World/" class="post-categoris-bottom-link">
+                  Hexo中的Hello_World - 发布第一篇Hexo文章
+                </a>
+                </li>
+              
               
             
             

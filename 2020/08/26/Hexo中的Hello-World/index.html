@@ -1,198 +1,263 @@
 
 
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>  Hexo中的Hello_World - 发布第一篇Hexo文章 |    Lyrik_</title>
-  <!-- 标签页图标 -->
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/1.png">
+  <link rel="icon" type="image/png" href="/img/1.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
   
-  <link rel="shortcut icon" href="https://p1-bcy.byteimg.com/img/banciyuan/0ce4b4c52fdb4a07ab33606399036543~tplv-banciyuan-w650.image" type="image/x-icon">
-  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="Lyrik">
+  <meta name="keywords" content="Lyrik,梨可">
+  <title>Hexo中的Hello_World - 发布第一篇Hexo文章 _ Lyrik_</title>
 
-  <!-- 图标库 -->
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
-  <!-- 动画库 -->
-  
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fushaolei/cdn-white@1.0/css/animate.css"/>
-  
-  <!-- css文件 -->
-  
-<link rel="stylesheet" href="/css/white.css">
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 
-  <!-- 代码高亮 -->
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
   
     
-      
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.1.1/styles/github.css">
-
-    
+    <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/srcery.min.css" />
   
+
+  
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_6peoq002giu.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_pjno9b9zyxs.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
 <meta name="generator" content="Hexo 5.0.2"></head>
 
 
 <body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>Lyrik_</strong>&nbsp;</a>
 
-<div class="menu-outer">
-    <div class="menu-inner">
-      <div class="menu-site-name  animate__animated  animate__fadeInUp">
-        <a href="/">
-          Lyrik_
-        </a>
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
         
-      </div>
-      <div class="menu-group">
-        <ul class="menu-ul">
-        
-          <a href="/" class="nav-link">
-            <li class="menu-li  animate__animated  animate__fadeInUp">
-              主页
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
             </li>
-          </a>
+          
         
-          <a href="/categories/novel" class="nav-link">
-            <li class="menu-li  animate__animated  animate__fadeInUp">
-              文章
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/novel">
+                
+                文章
+              </a>
             </li>
-          </a>
+          
         
-          <a href="/categories/note" class="nav-link">
-            <li class="menu-li  animate__animated  animate__fadeInUp">
-              笔记
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/note">
+                
+                Note
+              </a>
             </li>
-          </a>
+          
         
-          <a href="/categories/music" class="nav-link">
-            <li class="menu-li  animate__animated  animate__fadeInUp">
-              Music
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/music">
+                
+                Music
+              </a>
             </li>
-          </a>
+          
         
-          <a href="/categories/course" class="nav-link">
-            <li class="menu-li  animate__animated  animate__fadeInUp">
-              教程
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/course">
+                
+                教程
+              </a>
             </li>
-          </a>
+          
         
-          <a href="/About" class="nav-link">
-            <li class="menu-li  animate__animated  animate__fadeInUp">
-              About
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                Archive
+              </a>
             </li>
-          </a>
+          
         
-          <a href="/archives" class="nav-link">
-            <li class="menu-li  animate__animated  animate__fadeInUp">
-              归档
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                Category
+              </a>
             </li>
-          </a>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/About/">
+                <i class="iconfont icon-user-fill"></i>
+                About
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                友链
+              </a>
+            </li>
+          
         
         
-        
-        <a href="/search">
-          <li class="menu-li  animate__animated  animate__fadeInUp">
-            <i class="ri-search-line"></i>
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
           </li>
-        </a>
         
-          <li class="menu-li animate__animated  animate__fadeInUp" id="mobile-menu">
-            <i class="ri-menu-line"></i>
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" href="javascript:">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
           </li>
         
-        </ul>
-
-      </div>
-
+      </ul>
     </div>
-</div>
-<div id="mobile-main" class="animate__animated  animate__fadeIn">
-  <div class="mobile-menu-inner">
-    <div class="mobile-menu-site-name animate__animated  animate__fadeInUp">
-      <a href="/">
-        Lyrik_
-      </a>
-    </div>
-    <div class="mobile-menu-group" id="mobile-close">
-      <i class="ri-close-line"></i>
-    </div>
+  </div>
+</nav>
 
+    <div class="banner intro-2" id="background" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="container page-header text-center fade-in-up">
+            <span class="h2" id="subtitle">
+              
+                Hexo中的Hello_World - 发布第一篇Hexo文章
+              
+            </span>
+
+            
+              
+  <div class="mt-3 post-meta">
+    <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+    <time datetime="2020-08-26 10:42" pubdate>
+      2020年8月26日 上午
+    </time>
   </div>
 
-  <div class="mobile-menu-div">
+
+<div class="mt-1">
   
-    <a href="/" class="mobile-nav-link">
-      <div class="mobile-menu-child animate__animated  animate__fadeInUp">
-        <span>主页</span>
-      </div>
-    </a>
+
   
-    <a href="/categories/novel" class="mobile-nav-link">
-      <div class="mobile-menu-child animate__animated  animate__fadeInUp">
-        <span>文章</span>
-      </div>
-    </a>
-  
-    <a href="/categories/note" class="mobile-nav-link">
-      <div class="mobile-menu-child animate__animated  animate__fadeInUp">
-        <span>笔记</span>
-      </div>
-    </a>
-  
-    <a href="/categories/music" class="mobile-nav-link">
-      <div class="mobile-menu-child animate__animated  animate__fadeInUp">
-        <span>Music</span>
-      </div>
-    </a>
-  
-    <a href="/categories/course" class="mobile-nav-link">
-      <div class="mobile-menu-child animate__animated  animate__fadeInUp">
-        <span>教程</span>
-      </div>
-    </a>
-  
-    <a href="/About" class="mobile-nav-link">
-      <div class="mobile-menu-child animate__animated  animate__fadeInUp">
-        <span>About</span>
-      </div>
-    </a>
-  
-    <a href="/archives" class="mobile-nav-link">
-      <div class="mobile-menu-child animate__animated  animate__fadeInUp">
-        <span>归档</span>
-      </div>
-    </a>
+
   
   
-    <a href="/search">  
-      <div class="mobile-menu-child  animate__animated  animate__fadeInUp">
-        <i class="ri-search-line"></i>
-      </div>
-    </a>
     
-  </div>
-
-
+      <!-- 不蒜子统计文章PV -->
+      <span id="busuanzi_container_page_pv" style="display: none">
+        <i class="iconfont icon-eye" aria-hidden="true"></i>
+        <span id="busuanzi_value_page_pv"></span> 次
+      </span>
+    
+  
 </div>
 
-<div class="body-outer">
-  <div class="body-inner">
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
     
-<article class="post-inner">
-  <div class="post-content-outer">
-    <div class="post-intro">
-      <div class="post-title animate__animated  animate__fadeInUp">Hexo中的Hello_World - 发布第一篇Hexo文章</div>
-      <div class="meta-intro animate__animated  animate__fadeInUp">8月 26 2020</div>
       
-    </div>
-    <div class="post-content-inner">
-      <div class="post-content-inner-space">
 
-      </div>
-      <div class="post-content-main animate__animated  animate__fadeInUp">
-        <!-- top型目录 -->
-        
-        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p><code>Hello World</code><br>接触过代码的人总是对这个单词抱有特殊的情感<br>它是新生儿伸出手指触碰到的第一缕阳光<br>是我们刚刚来到这个世界上，第一次呼喊出的话语<br>我们仍是积极的，抱着对前景的希望和憧憬<br>骄傲自大却友善又明快<br>对着世界说一声<br>“你好”<br>来吧，我们这次换一种语言，用<code>Hexo</code>对着这个世界说一声<code>Hello World</code><br><strong>前提条件:</strong></p>
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto" id="post">
+            <!-- SEO header -->
+            <h1 style="display: none">Hexo中的Hello_World - 发布第一篇Hexo文章</h1>
+            
+            <div class="markdown-body" id="post-body">
+              <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p><code>Hello World</code><br>接触过代码的人总是对这个单词抱有特殊的情感<br>它是新生儿伸出手指触碰到的第一缕阳光<br>是我们刚刚来到这个世界上，第一次呼喊出的话语<br>我们仍是积极的，抱着对前景的希望和憧憬<br>骄傲自大却友善又明快<br>对着世界说一声<br>“你好”<br>来吧，我们这次换一种语言，用<code>Hexo</code>对着这个世界说一声<code>Hello World</code><br><strong>前提条件:</strong></p>
 <ul>
 <li><code>node.js</code></li>
 <li><code>github</code>仓库</li>
@@ -201,11 +266,11 @@
 <p><strong>では、ゲームを始めましょう</strong></p>
 <hr>
 <h2 id="新建本地资源库"><a href="#新建本地资源库" class="headerlink" title="新建本地资源库"></a>新建本地资源库</h2><p>在上一章的学习中，我们已经认识到网址的构成，也应该明白了本地资源库的重要性<br>所以在此我们新建一个本地资源库的文件夹，当然，这个操作使用<code>Hexo</code>来完成<br><em>我们将这个文件夹命名为<code>Blog</code><br>我们想让它存在的路径为<code>miao/Blog</code></em><br><code>终端</code>/<code>cmd</code></p>
-<pre><code class="bash">$ cd miao # 进入你想要安装的路径
-$ hexo init Blog # 在/miao路径下新建了Blog的文件夹用于存储本地文件
-$ cd miao/Blog # 进入这个路径
-$ npm install # 安装必要文件
-$ open .  # 打开当前路径文件夹，此时指向的是Blog</code></pre>
+<div class="hljs"><pre><code class="hljs bash">$ <span class="hljs-built_in">cd</span> miao <span class="hljs-comment"># 进入你想要安装的路径</span>
+$ hexo init Blog <span class="hljs-comment"># 在/miao路径下新建了Blog的文件夹用于存储本地文件</span>
+$ <span class="hljs-built_in">cd</span> miao/Blog <span class="hljs-comment"># 进入这个路径</span>
+$ npm install <span class="hljs-comment"># 安装必要文件</span>
+$ open .  <span class="hljs-comment"># 打开当前路径文件夹，此时指向的是Blog</span></code></pre></div>
 <p>我们完成了网站本地文件夹的新建，此后我们几乎所有的操作都要<code>cd</code>进这个文件夹里</p>
 <hr>
 <h2 id="认识资源库"><a href="#认识资源库" class="headerlink" title="认识资源库"></a>认识资源库</h2><p>上一个步骤的最后一步，我们打开了这个文件夹<br>接下来我们介绍一下这之中比较重要的几个文件</p>
@@ -227,145 +292,297 @@ $ open .  # 打开当前路径文件夹，此时指向的是Blog</code></pre>
 <h3 id="scaffolds"><a href="#scaffolds" class="headerlink" title="scaffolds"></a><code>scaffolds</code></h3><p>这是<code>Hexo</code>新建样式模板存放的地方，里面会有三个<code>.md</code>文件<br><code>draft.md</code> 新建草稿模板<br><code>page.md</code> 新建分页模板<br><code>post.md</code> 新建文章模板<br>用新建文章距离，如果你修改了<code>post.md</code>中两条<code>---</code>之中的东西，在你使用<code>Hexo</code>新建文章的时候，会自动在开头添加上这些<br>这些东西是文章的对于网页的索引，在之后的内容会详细讲它，<strong>在理解这个东西之前，不要修改它的格式</strong></p>
 <h3 id="node-modules"><a href="#node-modules" class="headerlink" title="node_modules"></a><code>node_modules</code></h3><p><code>Hexo</code>提供了相当多的插件，使用这些插件可以让你网站的功能变得更多<br>比如我就使用了一个可以让你在我的网站单击鼠标显示不同颜色社会主义核心价值观的插件，希望你不会觉得烦<br><del>因为我不知道怎么关掉它</del><br>插件被安装在这个目录，里面也有一些<code>Hexo</code>必备的自带插件，<strong>尽量不要去修改这里面的内容</strong></p>
 <h2 id="链接GitHub仓库"><a href="#链接GitHub仓库" class="headerlink" title="链接GitHub仓库"></a>链接<code>GitHub</code>仓库</h2><p>我们基本了解了本地文件夹的构造，这时候，为了发表网站到网络上，我们首先需要联系我们的本地文件和<code>Github</code>仓库<br>首先，打开我们的Github主页，进入我们之前新建的仓库<br>在<code>&lt;&gt;Code</code>这一栏，你可以看见一个<code>git@github.com:名字/网站</code>形式的东西，复制它<br>打开Blog中的<code>_config.yml</code><br>拉到最后一行，将其修改为这个形式</p>
-<pre><code class="YMAL"># Deployment 部署设置
-## Docs: https://hexo.io/docs/one-command-deployment
+<div class="hljs"><pre><code class="hljs YMAL"># Deployment 部署设置
+## Docs: https:&#x2F;&#x2F;hexo.io&#x2F;docs&#x2F;one-command-deployment
 deploy:
   type: git
   repo: &lt;你需要复制的一个东西&gt; # 刚才复制的
-  branch: master # 给予权限</code></pre>
+  branch: master # 给予权限</code></pre></div>
 <p>记得保存<br>这时候我们就链接好了本地和云端</p>
 <h2 id="发出自己的第一声啼哭吧"><a href="#发出自己的第一声啼哭吧" class="headerlink" title="发出自己的第一声啼哭吧"></a>发出自己的第一声啼哭吧</h2><p><code>终端</code>/<code>cmd</code></p>
-<pre><code class="bash">$ hexo d  # 这个命令cd在Blog中，部署自己的网站</code></pre>
+<div class="hljs"><pre><code class="hljs bash">$ hexo d  <span class="hljs-comment"># 这个命令cd在Blog中，部署自己的网站</span></code></pre></div>
 <p>等待大概3min后，输入你网址的命名，就可以看到这篇<code>Hello World</code>了</p>
 <h2 id="结束语"><a href="#结束语" class="headerlink" title="结束语"></a>结束语</h2><p>我们大致了解了本地资源库的构成并过了一遍部署文件的过程，在接下来的说明之中，我们将进入到配置主题和发布文章的过程<br>成就感有没有逐渐升起呢<br>那么我们移步到下一章</p>
 
-        <!-- 分类文章 -->
-        
-          <div class="post-categoris-bottom">
-            <div class="post-categoris-name">note</div>
-            <ul>
-            
-            
-            
-            
-              
-                <li class="base">
-                  <a  href="/2020/08/22/Hexo%E6%90%AD%E5%BB%BA%E7%9B%B8%E5%85%B3/" class="post-categoris-bottom-link">
-                  建站之后，更新网页的方法
-                </a>
-                </li>
-              
-              
-            
-            
-            
-              
-            
-            
-            
-              
-                <li class="base">
-                  <a  href="/2020/08/25/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E5%BB%BA%E7%AB%99/" class="post-categoris-bottom-link">
-                  从零开始建站 - 必备工具的准备&amp;&amp;下载
-                </a>
-                </li>
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/note/">note</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/Hexo/">Hexo</a>
+                    
+                  </div>
+                
+              </div>
               
               
-            
-            
-            
-              
-            
-            
-            
-              
-                <li class="me base">
-                  <a  href="/2020/08/26/Hexo%E4%B8%AD%E7%9A%84Hello-World/" class="post-categoris-bottom-link">
-                  Hexo中的Hello_World - 发布第一篇Hexo文章
-                </a>
-                </li>
-              
-              
-            
-            
-            </ul>
+            </div>
 
-          </div>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div id="tocbot"></div>
+</div>
 
-        
       </div>
-      <div class="post-content-inner-space">
-        
-          <div class="space-toc-main animate__animated  animate__fadeInUp">
-            <ol class="space-toc"><li class="space-toc-item space-toc-level-2"><a class="space-toc-link" href="#%E5%89%8D%E8%A8%80"><span class="space-toc-text">前言</span></a></li><li class="space-toc-item space-toc-level-2"><a class="space-toc-link" href="#%E6%96%B0%E5%BB%BA%E6%9C%AC%E5%9C%B0%E8%B5%84%E6%BA%90%E5%BA%93"><span class="space-toc-text">新建本地资源库</span></a></li><li class="space-toc-item space-toc-level-2"><a class="space-toc-link" href="#%E8%AE%A4%E8%AF%86%E8%B5%84%E6%BA%90%E5%BA%93"><span class="space-toc-text">认识资源库</span></a></li><li class="space-toc-item space-toc-level-2"><a class="space-toc-link" href="#%E9%93%BE%E6%8E%A5GitHub%E4%BB%93%E5%BA%93"><span class="space-toc-text">链接GitHub仓库</span></a></li><li class="space-toc-item space-toc-level-2"><a class="space-toc-link" href="#%E5%8F%91%E5%87%BA%E8%87%AA%E5%B7%B1%E7%9A%84%E7%AC%AC%E4%B8%80%E5%A3%B0%E5%95%BC%E5%93%AD%E5%90%A7"><span class="space-toc-text">发出自己的第一声啼哭吧</span></a></li><li class="space-toc-item space-toc-level-2"><a class="space-toc-link" href="#%E7%BB%93%E6%9D%9F%E8%AF%AD"><span class="space-toc-text">结束语</span></a></li></ol>
-           </div>
-        
-      </div>
-   </div>
-    <!-- 评论 -->
     
   </div>
-</article>
+</div>
+
+<!-- Custom -->
+
+
+    
+  </main>
+
+  
+    <a id="scroll-top-button" href="#" role="button">
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
   </div>
 </div>
+  
 
+  
 
+  
 
-<!-- 如果是home模式的话，不在首页就显示footer，如果不是home模式的话 所有都显示footer -->
-
-  <div class="footer-outer animate__animated  animate__fadeInUp">
-    <div class="footer-inner">
-    <div class="footer-text">
-    <p>© 2020 Lyrik 丨 Power by <a target="_blank" rel="noopener" href="http://hexo.io/">Hexo</a> Theme by <a target="_blank" rel="noopener" href="https://github.com/FuShaoLei/hexo-theme-white">White</a></p>
-
+  <footer class="mt-5">
+  <div class="text-center py-3">
+    <div>
+      <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
+      <i class="iconfont icon-love"></i>
+      <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener">
+        <span>Fluid</span></a>
     </div>
-    <div class="footer-contact">
-    <ul class="footer-ul">
-        
-        <li class="footer-li">
-            <a href="https://space.bilibili.com/6741287" target="_blank">
-                <i class="ri-bilibili-line"></i>
-            </a>
-        </li>
-        
-        <li class="footer-li">
-            <a href="http://music.163.com/artist/12466942/?userid=258634496" target="_blank">
-                <i class="ri-netease-cloud-music-line"></i>
-            </a>
-        </li>
-        
-        <li class="footer-li">
-            <a href="https://github.com/Lyrikp" target="_blank">
-                <i class="ri-github-line"></i>
-            </a>
-        </li>
-        
-        <li class="footer-li">
-            <a href="mailto:liulike74@163.com" target="_blank">
-                <i class="ri-mail-line"></i>
-            </a>
-        </li>
-        
-    </ul>
-    </div>
-    </div>
-</div>
-
-
-
-
-
-
-<script src="/js/white.js"></script>
-
-
+    
+  <div class="statistics">
+    
+    
 
     
       
-<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
-
-      <script>hljs.initHighlightingOnLoad();</script>
+        <!-- 不蒜子统计PV -->
+        <span id="busuanzi_container_site_pv" style="display: none">
+            总访问量 
+            <span id="busuanzi_value_site_pv"></span>
+             次
+          </span>
+      
+      
+        <!-- 不蒜子统计UV -->
+        <span id="busuanzi_container_site_uv" style="display: none">
+            总访客数 
+            <span id="busuanzi_value_site_uv"></span>
+             人
+          </span>
+      
     
+  </div>
+
+
+    
+
+    
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
+<script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/main.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
+  <script  src="/js/clipboard-use.js" ></script>
+
+
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+
+  <script  src="https://cdn.staticfile.org/tocbot/4.11.1/tocbot.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      var boardCtn = $('#board-ctn');
+      var boardTop = boardCtn.offset().top;
+
+      tocbot.init({
+        tocSelector: '#tocbot',
+        contentSelector: '#post-body',
+        headingSelector: 'h1,h2,h3,h4,h5,h6',
+        linkClass: 'tocbot-link',
+        activeLinkClass: 'tocbot-active-link',
+        listClass: 'tocbot-list',
+        isCollapsedClass: 'tocbot-is-collapsed',
+        collapsibleClass: 'tocbot-is-collapsible',
+        collapseDepth: 0,
+        scrollSmooth: true,
+        headingsOffset: -boardTop
+      });
+      if ($('.toc-list-item').length > 0) {
+        $('#toc').css('visibility', 'visible');
+      }
+    });
+  </script>
+
+
+
+
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+      icon: "#"
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      searchFunc(path, 'local-search-input', 'local-search-result');
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <script>
+    $('#post img:not(.no-zoom img, img[no-zoom]), img[zoom]').each(
+      function () {
+        var element = document.createElement('a');
+        $(element).attr('data-fancybox', 'images');
+        $(element).attr('href', $(this).attr('src'));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+  
+
+  
+    <!-- MathJax -->
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        },
+        options: {
+          renderActions: {
+            findScript: [10, doc => {
+              document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+                const display = !!node.type.match(/; *mode=display/);
+                const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                const text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = { node: text, delim: '', n: 0 };
+                math.end = { node: text, delim: '', n: 0 };
+                doc.math.push(math);
+              });
+            }, '', false],
+            insertedScript: [200, () => {
+              document.querySelectorAll('mjx-container').forEach(node => {
+                let target = node.parentNode;
+                if (target.nodeName.toLowerCase() === 'li') {
+                  target.parentNode.classList.add('has-jax');
+                }
+              });
+            }, '', false]
+          }
+        }
+      };
+    </script>
+
+    <script async src="https://cdn.staticfile.org/mathjax/3.0.5/es5/tex-svg.js" ></script>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- hexo injector body_end start --><script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script><script type="text/javascript"> 
 var text_p = 0;
